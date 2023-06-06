@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="" href="/ejercicio-15.html">
+    <title>EJERCICIOS DE ALGORITMOS</title>
+</head>
+<body>
+
+    <h1 style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">EJERCICIOS DE ALGORITMOS</h1>
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 1</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            A un trabajador le pagan según sus horas trabajadas y una tarifa de pago
+            por hora. Si la cantidad de horas trabajadas es mayor a 40 horas, la
+            tarifa se incrementa en un 50% para las horas extras. Escribir un
+            algoritmo que calcule el salario del trabajador dadas las horas trabajadas
+            y la tarifa.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Horas Trabajadas</p> 
+            <p style="width: 320px;">Pago por hora</p>
+            <p style="width: 320px;">Salario del trabajador</p>            
+        </div>
+        <div style="display: flex;">
+            <input id="num1" style="display: block; height: 28px;" type="text">
+            <input id="num2" style="display: block; margin-left: 140px; height: 28px;" type="text">
+            <button style="height: 30px; margin-left: 14px;" type="button" onclick="salario()">Calcular</button>
+            <p id="calcular" style="display: block; margin-left: 80px; margin-top: auto; font-size: 20px;"></p> 
+        </div>
+
+    </div>
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 2</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            A un trabajador le descuentan de su sueldo el 10% si su sueldo es menor o
+            igual a 1000, por encima de 1000 y hasta 2000 el 5% del adicional, y por
+            encima de 2000 el 3% del adicional. Escribir un algoritmo que calcule el
+            descuento y sueldo neto que recibe el trabajador dado su sueldo.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Sueldo del trabajador</p> 
+            <p style="width: 320px;">Sueldo neto que recibe el trabajador</p>            
+        </div>
+        <div style="width: 380px;">
+            <input id="one" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="sueldoNeto()">Calcular</button>
+            <p id="calcularS" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 3</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que lea una cantidad y calcule el descuento
+            considerando que si la cantidad dada está por encima de 100 el descuento
+            es el 10% y si está por debajo de 100 el descuento es el 2%.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Cantidad</p> 
+            <p style="width: 320px;">Descuento</p>            
+        </div>
+        <div style="width: 380px;">
+            <input id="tres" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="descuentoC()">Calcular</button>
+            <p id="can" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 4</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que lea un tiempo en segundos y que calcule los
+            segundos restantes que le correspondan para convertirse exactamente en
+            minutos.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Segundos</p> 
+            <p style="width: 320px;">Tiempo</p>            
+        </div>
+        <div style="width: 610px;">
+            <input id="seg" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="tiempo()">Calcular</button>
+            <p id="time" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 5</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que lea un tiempo en minutos y que calcule los días,
+            horas y minutos que le corresponden.    
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Minutos</p> 
+            <p style="width: 320px;">Dias, Hora, Minutos</p>            
+        </div>
+        <div style="width: 580px;">
+            <input id="min" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="diasHM()">Calcular</button>
+            <p id="day" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 6</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que lea las horas trabajadas de una persona y la
+            tarifa de pago para calcular su salario e imprimirlo.  
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Horas Trabajadas</p> 
+            <p style="width: 320px;">Tarifa de pago</p> 
+            <p style="width: 320px;">Salario</p>           
+        </div>
+        <div style="display: flex;">
+            <input id="n1" style="display: block; height: 28px;" type="text">
+            <input id="n2" style="display: block; margin-left: 140px; height: 28px;" type="text">
+            <button style="height: 30px; margin-left: 14px;" type="button" onclick="pago()">Calcular</button>
+            <p id="pago" style="display: block; margin-left: 80px; margin-top: auto; font-size: 20px;"></p> 
+        </div>
+    </div>
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 7</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir el algoritmo que permita emitir la factura correspondiente a una
+            compra de un articulo determinado, del que se adquieren una o varias
+            unidades. El IVA es del 15% y si el precio neto ( precio venta mas IVA) es
+            mayor de 50.00 pesos se debe realizar un descuento del 5%.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Unidades</p> 
+            <p style="width: 320px;">Precio Neto</p>  
+            <p style="width: 320px;">Total</p>          
+        </div>
+        <div style="display: flex;">
+            <input id="uni" style="display: block; height: 28px;" type="text">
+            <input id="pre" style="display: block; margin-left: 140px; height: 28px;" type="text">
+            <button style="height: 30px; margin-left: 14px;" type="button" onclick="factura()">Calcular</button>
+            <p id="total" style="display: block; margin-left: 80px; margin-top: auto; font-size: 20px;"></p> 
+        </div>
+    </div>
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 8</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir el algoritmo que muestre el mensaje de acuerdo a la edad
+            ingresada: Si la edad es de 0 a 10 años “niño”, si la edad es de 11 a 14
+            años “púber” , si la edad es de 15 a 18 años “ adolescente” , si la edad
+            es de 19 a 25 años “joven” , si la edad es de 26 a 65 años “ adulto” , si
+            la edad es mayor de 65 “anciano”.  
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Edad</p> 
+            <p style="width: 320px;"></p>            
+        </div>
+        <div style="width: 480px;">
+            <input id="edad" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="edad()">Calcular</button>
+            <p id="year" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 9</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir el algoritmo que lea una hora y que muestre la programación de
+            acuerdo al horario en que se transmite “dibujos animados ” : Si es de 10 a
+            12 horas, “ tele serie ” : si es de 13 a 16 horas, “ novelas repetidas ” :
+            si es de 16 a 18 horas, “dibujos animados ” : si es de 18 a 22 horas,
+            “noticiero” : si es de 22 a 23 horas.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Hora</p> 
+            <p style="width: 320px;">Programacion</p>            
+        </div>
+        <div style="width: 480px;">
+            <input id="hora" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="programacion()">Calcular</button>
+            <p id="pro" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 10</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Dadas 3 longitudes, escribir un algoritmo que determine mediante un
+            mensaje si tales longitudes forman un triangulo: equilátero (cuando sus
+            tres lados son iguales), isósceles (cuando dos de sus lados son iguales) o
+            escaleno (cuando sus tres lados son diferentes), o no forman triangulo
+            (cada lado tiene que ser menor que la suma de los otros dos).
+
+        </p>
+        <div style="display: flex;">
+            <p style="width: 210px;">Longitud 1</p> 
+            <p style="width: 210px;">Longitud 2</p> 
+            <p style="width: 340px;">Longitud 3</p> 
+            <p>Triangulo</p>            
+        </div>
+        <div style="display: flex;">
+            <input id="l1" style="height: 28px; margin-right: 40px;" type="text">
+            <input id="l2" style="height: 28px; margin-right: 40px;" type="text">
+            <input id="l3" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="triangulo()">Calcular</button>
+            <p id="tri" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 11</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Una tienda se dedica a la venta de computadoras, cada vendedor
+            tiene un sueldo mensual pero además de su sueldo gana una comisión por
+            venta: Si el monto de venta es mayor de 10,000 la comisión será del 15%.
+            Si el monto de venta es mayor o igual a 5,000 y menor de 10,000 la
+            comisión es del 5%. Si el monto de la venta es menor que 5,000 no tiene
+            comisión. Escribir un algoritmo que calcule el sueldo total de cada
+            vendedor.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Sueldo Mensual</p> 
+            <p style="width: 320px;">Sueldo mas comision</p>            
+        </div>
+        <div style="width: 400px;">
+            <input id="venta" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="sueldoV()">Calcular</button>
+            <p id="sueldoC" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 12</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Katthy organiza una fiesta en la cual una computadora controla el
+            ingreso mediante 5 claves. Si se ingresa al menos una clave incorrecta la
+            computadora imprimirá "TE EQUIVOCASTE DE FIESTA" y no permitirá el
+            ingreso. Si las 5 claves son correctas imprimirá "BIENVENIDO A LA FIESTA".
+            Escribir un algoritmo que realice lo anterior.
+            <br>
+            Las Claves son:
+            1: "TIENES"
+            2: "QUE SER"
+            3: "INVITADO"
+            4: "PARA"
+            5: "INGRESAR" <br> (Ingresar la clave en MAYUSCULAS)
+        </p>
+        <div style="display: flex;">
+            <p style="width: 240px;">clave 1</p> 
+            <p style="width: 240px;">clave 2</p>  
+            <p style="width: 240px;">clave 3</p> 
+            <p style="width: 280px;">clave 4</p>  
+            <p style="width: 710px;">clave 5</p>
+            <p style="width: 260px;"></p>              
+        </div>
+        <div style="display: flex;">
+            <input id="c1" style="height: 28px; margin-right: 20px; width: 120px;" type="text">
+            <input id="c2" style="height: 28px; margin-right: 20px; width: 120px;" type="text">
+            <input id="c3" style="height: 28px; margin-right: 20px; width: 120px;" type="text">
+            <input id="c4" style="height: 28px; margin-right: 20px; width: 120px;" type="text">
+            <input id="c5" style="height: 28px; margin-right: 20px; width: 120px;" type="text">
+            <button style="height: 30px;" type="button" onclick="ingreso()">Calcular</button>
+            <p id="ingresar" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 13</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que calcule las raíces de una ecuación
+            cuadrática cuya forma canónica es:
+            <br>
+            Ax**2 + By + C = 0
+            <br>
+            Solo se calcularán raíces reales. si el discriminante en menor de 0,
+            imprimir un mensaje que indique que existen dos raíces imaginarias. Los
+            coeficientes A,B,C serán ingresados.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 210px;">A</p> 
+            <p style="width: 210px;">B</p> 
+            <p style="width: 340px;">C</p> 
+            <p>Resultado</p>            
+        </div>
+        <div style="display: flex;">
+            <input id="a" style="height: 28px; margin-right: 40px;" type="text">
+            <input id="b" style="height: 28px; margin-right: 40px;" type="text">
+            <input id="c" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="calc2grad()">Calcular</button>
+            <p id="info" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 14</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            "TIENDAS PATITO" se encuentra de aniversario y ha programado una
+            serie de ofertas con la finalidad de brindar facilidades a sus clientes y
+            al a vez de incrementar sus ventas. Estas ofertas se basan específicamente
+            en un porcentaje de descuento sobre el total de compra el cual varia de
+            acuerdo al monto. Por un monto mayor o igual a $500 se hará un descuento
+            del 30%. Por un monto menor de $500 pero mayor o igual a 200 se hará un
+            descuento del 20%.Por un monto menor de $200 pero mayor o igual a 100 se
+            hará un descuento del 10%. Escribir un algoritmo que calcule la cantidad
+            total a pagar de una compra.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Compra</p> 
+            <p style="width: 320px;">Total Neto</p>            
+        </div>
+        <div style="width: 400px;">
+            <input id="compra" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="totalPagar()">Calcular</button>
+            <p id="compra4" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+    
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 15</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que permita escoger en un conjunto de números
+            naturales: <br>
+            Cuáles son menores que 15. <br>
+            Cuáles son mayores de 50. <br>
+            Cuáles están comprendidos entre 25 y 50. <br>
+            El algoritmo termina con el ingreso de un número negativo.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 400px;">Ingresa los numeros - "Separado por comas"</p> 
+            <p style="width: 320px;"></p>            
+        </div>
+        <div style="width: 100%;">
+            <input id="number" style="height: 28px; width: 200px;" type="text">
+            <button style="height: 30px;" type="button" onclick="numerosN()">Calcular</button>
+            <p id="num" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 16</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Calcular mediante un algoritmo repetitivo la suma de los N primeros
+            números naturales.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Ingresa un numero</p> 
+            <p style="width: 320px;"></p>            
+        </div>
+        <div style="width: 400px;">
+            <input id="numNa" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="sumaN()">Calcular</button>
+            <p id="suma16" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 17</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Modificar el ejercicio 1 para obtener la suma de los salarios de 200
+            trabajadores.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Horas Trabajadas</p> 
+            <p style="width: 320px;">Pago por hora</p>
+            <p style="width: 320px;">Salario de 200 trabajadores</p>            
+        </div>
+        <div style="display: flex;">
+            <input id="nm1" style="display: block; height: 28px;" type="text">
+            <input id="nm2" style="display: block; margin-left: 140px; height: 28px;" type="text">
+            <button style="height: 30px; margin-left: 14px;" type="button" onclick="salarioTrabajadores()">Calcular</button>
+            <p id="calc" style="display: block; margin-left: 80px; margin-top: auto; font-size: 20px;"></p> 
+        </div>
+    </div>
+
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 18</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Dadas N notas de un estudiante, escribir un algoritmo que calcule: <br>
+            a) Cuántas notas tiene desaprobadas. <br>
+            b) Cuántas aprobadas. <br>
+            c) El promedio de notas. <br>
+            d) El promedio de notas aprobadas y el de desaprobadas.
+        </p>
+        <p style="width: 320px; font-size: 14px; height: 0px;">Por favor ingresa las notas separadas por espacios</p>  
+        <div style="display: flex;">
+            <p style="width: 320px;">Ingresa un numero</p> 
+            <p style="width: 320px; font-size: 14px;"></p>            
+        </div>
+        <div style="width: 100%;">
+            <input id="notasInput" style="height: 28px; margin-right: 5px;" type="text">
+            <button style="height: 30px;" type="button" onclick="calcularNotas()">Calcular</button>
+            <p id="resultados" style=" margin-left: 5px; float: right; margin-top: auto; font-size: 18px;"></p> 
+        </div>
+    </div>
+
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 19</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Dado un número n, escribir un algoritmo que determine la suma de sus
+            dígitos.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Ingresa un numero</p> 
+            <p style="width: 320px;"></p>            
+        </div>
+        <div style="width: 500px;">
+            <input id="numeroNatural" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="sumaDigitos()">Calcular</button>
+            <p id="sumaNatural" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 20</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Realizar un algoritmo que permita pedir 50 números naturales y
+            determine e imprima cuántos son pares, impares, positivos y negativos.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Ingresa los numeros - "Separado por comas"</p> 
+            <p style="width: 320px;"></p>            
+        </div>
+        <div style="width: 100%;">
+            <input id="numeroType" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="numerosTipo()">Calcular</button>
+            <p id="type" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 21</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Desarrollar un algoritmo para calcular e imprimir el factorial de un
+            número dado.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Ingresa un numero</p> 
+            <p style="width: 320px;"></p>            
+        </div>
+        <div style="width: 600px;">
+            <input id="fact" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="factorial()">Calcular</button>
+            <p id="facto" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 22</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que calcule la media de 100 números dados e
+            imprima su resultado.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Ingresa los numeros - "Separado por comas"</p> 
+            <p style="width: 320px;"></p>            
+        </div>
+        <div style="width: 90%;">
+            <input id="media" style="height: 28px; margin-right: 40px; width: 500px;" type="text">
+            <button style="height: 30px;" type="button" onclick="medianumeros()">Calcular</button>
+            <p id="calcMedia" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 23</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que calcule la suma y el producto de los
+            números pares comprendidos entre 20 y 400 incluyendo ambos.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;"></p>            
+        </div>
+        <div style="width: 600px;">
+            <button style="height: 30px;" type="button" onclick="sumaNumerosPares()">Calcular</button>
+            <p id="sumaPares" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 20px;"></p> 
+        </div>
+    </div>
+
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 24</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que lea varios caracteres, uno a la vez, y que
+            se detenga cuando sea dada alguna de las vocales y la escriba.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 420px;">Ingresa los caracteres - "Separado por comas"</p> 
+            <p style="width: 320px;"></p>            
+        </div>
+        <div style="width: 800px;">
+            <input id="caracteres" style="width: 300px; height: 28px; margin-right: 0px;" type="text">
+            <button style="height: 30px;" type="button" onclick="noVocales()">Calcular</button>
+            <p id="char" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 20px;"></p> 
+        </div>
+    </div>
+
+
+
+    <div id="block">
+        <h2 style="margin-top: 5px;">Ejercicio 25</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            El ing. De sistemas de un banco de crédito necesita conocer de una
+            lista de 2500 cuentas cuál es la que posee mayor cantidad y cuál es la que
+            posee menor cantidad, de dinero. Escriba un algoritmo que realice lo
+            anterior, sin ordenar las cuentas.
+        </p>
+        <div style="display: flex;"> 
+            <p style="width: 320px;"></p>            
+        </div>
+        <div style="width: 1000px">
+            <button style="height: 30px;" type="button" onclick="maxMin()">Calcular</button>
+            <p id="maxmin" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+
+
+    <div style="margin-top: 100px; width: 80%; height: 350px; margin-left: auto; margin-right: auto;">
+        <h2 style="margin-top: 5px;">Ejercicio 26</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que permita calcular y mostrar el jornal
+            mensual de una empresa de acuerdo con las siguientes especificaciones: <br>
+            · los trabajadores tienen dos turnos (nocturno y diurno) <br>
+            · la tarifa de las horas diurnas es de 10 pesos. <br>
+            · La tarifa de las nocturnas es de 20 pesos. <br>
+            · Ningún trabajador recibe nada por sábados o domingos. <br>
+            · El trabajador será despedido si sus horas trabajadas son menores que
+            15. <br>
+            El algoritmo termina cuando sea dado cero como horas trabajadas
+        </p>
+        <div style="display: flex;">
+            <p style="width: 180px;">Ingresa que turno trabaja</p> 
+            <p style="width: 186px;">Ingrese los dias que trabajo</p>
+            <p style="width: 190px;">Ingrese las horas trabajadas</p>            
+        </div>
+        <div style="width: 100%;">
+            <input id="turnoTrabajo" style="height: 28px; margin-right: 8px;" type="text">
+            <input id="diasTrabajo" style="height: 28px; margin-right: 8px;" type="text">
+            <input id="horasTrabajo" style="height: 28px; margin-right: 8px;" type="text">
+            <button style="height: 30px;" type="button" onclick="jornalMes()">Calcular</button>
+            <p id="pagoJornal" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 18px;"></p> 
+        </div>
+    </div>
+
+
+    <div style="margin-top: 100px; width: 80%; height: 350px; margin-left: auto; margin-right: auto;">
+        <h2 style="margin-top: 5px;">Ejercicio 27</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que determine cuántos trabajadores recibirán
+            un salario mayor o igual a 500, dadas la tarifa y las horas trabajadas.
+            <br>
+            El numero de horas trabajadas tiene que ser proporcional al numero de tarifa escritas.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Horas Trabajadas "Ingresa las horas de cada trabajador separado por comas"</p> 
+            <p style="width: 320px;">Tarifa "Ingresa la tarifa de cada trabajador separado por comas"</p>
+            <p style="width: 320px;">Trabajadores que reciben un salario mayor o igual a $500</p>            
+        </div>
+        <div style="display: flex;">
+            <input id="horaTrabajada" style="display: block; height: 28px;" type="text">
+            <input id="tarifaTrabajo" style="display: block; margin-left: 140px; height: 28px;" type="text">
+            <button style="height: 30px; margin-left: 14px;" type="button" onclick="contarTSalario()">Calcular</button>
+            <p id="contador" style="display: block; margin-left: 80px; margin-top: auto; font-size: 20px;"></p> 
+        </div>
+    </div>
+
+
+    <div style="margin-top: 100px; width: 80%; height: 350px; margin-left: auto; margin-right: auto;">
+        <h2 style="margin-top: 5px;">Ejercicio 28</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que clasifique a 50 personas según su edad y
+            sexo, al final deberá escribir la cantidad de personas masculinas mayores
+            de edad, la cantidad de personas femeninas menores de edad, cantidad de
+            personas mayores y menores, además deberá indicar el porcentaje que
+            representan las personas mayores y las menores, de edad.            
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;"></p>            
+        </div>
+        <div style="width: 600px;">
+            <button style="height: 30px;" type="button" onclick="clasificacion()">Calcular</button>
+            <p id="masculinoMayorEdad" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 18px;"></p> 
+            <p id="femeninasMenoresEdad" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 18px;"></p> 
+            <p id="personasMayores" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 18px;"></p> 
+            <p id="personasMenores" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 18px;"></p> 
+            <p id="porcentajeMayor" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 18px;"></p> 
+            <p id="porcentajeMenor" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 18px;"></p> 
+        </div>
+    </div>
+
+
+    <div style="margin-top: 100px; width: 80%; height: 350px; margin-left: auto; margin-right: auto;">
+        <h2 style="margin-top: 5px;">Ejercicio 29</h2>
+        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+            Escribir un algoritmo que ordene una lista de números indicando al
+            final la cantidad de números pares y la cantidad de números impares, el
+            dato a ingresar es un número y se debe repetir el proceso mientras el
+            número ingresado sea diferente a cero.
+        </p>
+        <div style="display: flex;">
+            <p style="width: 320px;">Ingresa los numeros - "Separado por comas"</p> 
+            <p style="width: 320px;"></p>            
+        </div>
+        <div style="width: 900px;">
+            <input id="numerosOr" style="height: 28px; margin-right: 40px;" type="text">
+            <button style="height: 30px;" type="button" onclick="ordenarNumeros()">Calcular</button>
+            <p id="orden" style=" margin-left: 10px; float: right; margin-top: auto; font-size: 22px;"></p> 
+        </div>
+    </div>
+
+    
+
+
+    <style>
+        #block{
+            height: 180px;
+            margin-top: 150px;
+            width: 80%; 
+            height: 150px; 
+            margin-left: auto; 
+            margin-right: auto;
+        }
+        
+    </style>
+
+    <script src="/ejercicios.js"></script>
+    
+</body>
+</html>
